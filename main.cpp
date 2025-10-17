@@ -16,10 +16,6 @@ private:
         }
     };
 
-class every_other_element {
-    
-}
-
     Node* head;
     Node* tail;
 
@@ -55,6 +51,13 @@ public:
         else
             tail = newNode;
         temp->next = newNode;
+    }
+    void every_other_element() {
+        Node* temp = head;
+        while (temp) {
+            if(temp->next)
+                temp = temp->next->next;
+        }
     }
 
     void delete_val(int value) {
