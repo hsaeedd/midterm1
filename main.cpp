@@ -29,14 +29,14 @@ public:
         }
 
         Node* newNode = new Node(value);
-        if (!head) {
-            head = tail = newNode;
+        if (!head) {//if the list is blank then 
+            head = tail = newNode;//the only element is the newnode
             return;
         }
 
-        Node* temp = head;
+        Node* temp = head;//at the beginning node then 
         for (int i = 0; i < position && temp; ++i)
-            temp = temp->next;
+            temp = temp->next;//in this loop go to the next spot/position that is wanted
 
         if (!temp) {
             cout << "Position exceeds list size. Node not inserted.\n";
