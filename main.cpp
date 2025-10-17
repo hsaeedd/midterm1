@@ -16,6 +16,10 @@ private:
         }
     };
 
+class every_other_element {
+    
+}
+
     Node* head;
     Node* tail;
 
