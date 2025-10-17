@@ -60,7 +60,7 @@ public:
         }
     }
 
-    void delete_val(int value) {
+    void delete_val(int value) {//delete a specific value
         if (!head) return;
 
         Node* temp = head;
